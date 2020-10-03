@@ -18,7 +18,7 @@ class SettingsCommands(commands.Cog):
         guild = ctx.guild if not guild else guild
         emb = discord.Embed(title='**Prefix**', colour = 0x55ffee)
         await ctx.channel.purge(limit=1)
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["prefixes"]
@@ -74,7 +74,7 @@ class SettingsCommands(commands.Cog):
         guild = ctx.guild if not guild else guild
         emb = discord.Embed(title='**Mute role**', colour = 0x55ffee)
         await ctx.channel.purge(limit=1)
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["mute-roles"]
@@ -131,7 +131,7 @@ class SettingsCommands(commands.Cog):
         guild = ctx.guild if not guild else guild
         emb = discord.Embed(title='**Welcome channel**', colour = 0x55ffee)
         await ctx.channel.purge(limit=1)
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["welcome-channels"]
@@ -188,7 +188,7 @@ class SettingsCommands(commands.Cog):
         guild = ctx.guild if not guild else guild
         emb = discord.Embed(title='**Welcome role**', colour = 0x55ffee)
         await ctx.channel.purge(limit=1)
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["welcome-roles"]
@@ -244,7 +244,7 @@ class SettingsCommands(commands.Cog):
         guild = ctx.guild if not guild else guild
         emb = discord.Embed(title='**Command channel**', colour = 0x55ffee)
         await ctx.channel.purge(limit=1)
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["command-channels"]
@@ -294,7 +294,7 @@ class SettingsCommands(commands.Cog):
         guild = ctx.guild if not guild else guild
         emb = discord.Embed(title='**Level channel**', colour = 0x55ffee)
         await ctx.channel.purge(limit=1)
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["role-channels"]
