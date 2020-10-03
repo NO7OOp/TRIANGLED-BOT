@@ -28,7 +28,7 @@ class AdminCommands(commands.Cog):
         emb.add_field( name = "**Roles were**", value = '**{}**'.format( member.roles ).replace( '[' , '' ).replace( ']' , '' ).replace( '<' , '' ).replace( '>' , '' ).replace( "'" , '' ).replace( 'Role' , '' ).replace( 'id=' , '' ).replace( 'name=' , '' ).replace( '1' , '' ).replace( '2' , '' ).replace( '3' , '' ).replace( '4' , '' ).replace( '5' , '' ).replace( '6' , '' ).replace( '7' , '' ).replace( '8' , '' ).replace( '9' , '' ).replace( '0' , '' ).replace('"', '').replace("ud", ''), inline=False )
         emb.set_footer( text = 'Was kicked by {}'.format( ctx.author.name ), icon_url = ctx.author.avatar_url )
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["command-channels"]
@@ -62,7 +62,7 @@ class AdminCommands(commands.Cog):
         emb.set_footer( text = 'Was banned by {}'.format( ctx.author.name ), icon_url = ctx.author.avatar_url )
         emb.add_field( name = "**Roles were**", value = '**{}**'.format( member.roles ).replace( '[' , '' ).replace( ']' , '' ).replace( '<' , '' ).replace( '>' , '' ).replace( "'" , '' ).replace( 'Role' , '' ).replace( 'id=' , '' ).replace( 'name=' , '' ).replace( '1' , '' ).replace( '2' , '' ).replace( '3' , '' ).replace( '4' , '' ).replace( '5' , '' ).replace( '6' , '' ).replace( '7' , '' ).replace( '8' , '' ).replace( '9' , '' ).replace( '0' , '' ).replace('"', '').replace("ud", ''), inline=False )
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["command-channels"]
@@ -100,7 +100,7 @@ class AdminCommands(commands.Cog):
             emb.set_thumbnail( url = user.avatar_url )
             emb.set_footer( text = 'Was unbanned by {}'.format( ctx.author.name ), icon_url = ctx.author.avatar_url )
 
-            mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+            mongo_url = ""
             cluster = MongoClient(mongo_url)
             db = cluster["servers"]
             collection = db["command-channels"]
