@@ -1,0 +1,3 @@
+"#BOT" 
+"# TRIANGLED" 
+"# TRIANGLED-BOT" 
