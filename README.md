@@ -1,3 +1,2 @@
-"#BOT" 
-"# TRIANGLED" 
-"# TRIANGLED-BOT" 
+I want to share you my bot's source code... 
+#TRIANGLED
