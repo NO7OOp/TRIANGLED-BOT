@@ -17,7 +17,7 @@ class Events(commands.Cog):
     async def on_member_join( self, member ):
         emb = discord.Embed( colour = 0x55ffee )
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["welcome-channels"]
@@ -55,7 +55,7 @@ class Events(commands.Cog):
     async def on_member_remove( self, member ):
         emb = discord.Embed( title = '**Member left us**', colour = 0xff0000  )
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["welcome-channels"]
@@ -107,7 +107,7 @@ class Events(commands.Cog):
     #Guild Join
     @commands.Cog.listener()
     async def on_guild_join( self, guild ):
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["prefixes"]
@@ -126,7 +126,7 @@ class Events(commands.Cog):
     #Guild Join
     @commands.Cog.listener()
     async def on_guild_remove( self, guild ):
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["prefixes"]
@@ -217,7 +217,7 @@ class Events(commands.Cog):
     @commands.Cog.listener()
     async def on_message( self, ctx ):
         emb = discord.Embed(colour = 0x55ffee)
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["levels"]
