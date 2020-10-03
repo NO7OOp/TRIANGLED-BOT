@@ -22,7 +22,7 @@ class Commands(commands.Cog):
         await ctx.channel.purge(limit=1)
         channel = ctx.channel.id
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["levels"]
@@ -76,7 +76,7 @@ class Commands(commands.Cog):
         guild = ctx.guild if not guild else guild
         embcolor = 0x55ffee
         await ctx.channel.purge(limit=1)
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["prefixes"]
