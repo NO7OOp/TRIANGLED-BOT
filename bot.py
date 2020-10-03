@@ -11,7 +11,7 @@ import io
 #sys.path.insert(1, '../TRIANGLED')
 
 def get_prefix(bot, message):
-    mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+    mongo_url = ""
     cluster = MongoClient(mongo_url)
     db = cluster["servers"]
     collection = db["prefixes"]
