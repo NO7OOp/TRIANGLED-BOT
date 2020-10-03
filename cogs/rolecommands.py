@@ -43,7 +43,7 @@ class RoleCommands(commands.Cog):
             emb.set_footer(text='Was requested to add by {}'.format(
                 ctx.author.name), icon_url=ctx.author.avatar_url)
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["command-channels"]
@@ -91,7 +91,7 @@ class RoleCommands(commands.Cog):
             emb.set_footer(text='Was removed by {}'.format(
                 ctx.author.name), icon_url=ctx.author.avatar_url)
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["command-channels"]
@@ -118,7 +118,7 @@ class RoleCommands(commands.Cog):
     #     emb = discord.Embed(title='**React for role**', colour=member.color)
     #     await ctx.channel.purge(limit=1)
     #
-    #     mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+    #     mongo_url = ""
     #     cluster = MongoClient(mongo_url)
     #     db = cluster["servers"]
     #     collection = db["reaction"]
