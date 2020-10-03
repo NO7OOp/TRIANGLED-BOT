@@ -28,7 +28,7 @@ class MessageCommands(commands.Cog):
         emb.set_footer(text='Was requested by {}'.format(
             ctx.author.name), icon_url=ctx.author.avatar_url)
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["command-channels"]
@@ -54,7 +54,7 @@ class MessageCommands(commands.Cog):
         emb = discord.Embed(title='**Mute**', colour=0xff0000 )
         await ctx.channel.purge(limit=1)
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["mute-roles"]
@@ -109,7 +109,7 @@ class MessageCommands(commands.Cog):
         emb = discord.Embed(title='**Unmute**', colour = 0x55ffee)
         await ctx.channel.purge(limit=1)
 
-        mongo_url = "mongodb+srv://OOp:Armannikoyan2004@triangled.zexks.mongodb.net/servers?retryWrites=true&w=majority"
+        mongo_url = ""
         cluster = MongoClient(mongo_url)
         db = cluster["servers"]
         collection = db["mute-roles"]
