@@ -46,7 +46,7 @@ class Prefix(commands.Cog):
         if collection.count_documents == 0:
             collection.update({"_id": guild_id}, {"$set": {"Prefix": new_prefix}})
             emb.set_author(name = guild.name, icon_url = guild.icon_url)
-            emb.add_field(name = "**Successful**", value = f"**Your server's prefix have been setted to: ``{new_prefix}``**")
+            emb.add_field(name = "**Successful**", value = f"**Your server's prefix have been changed to: ``{new_prefix}``**")
         elif cur_prefix == guild_prefix:
             emb.set_author(name = guild.name, icon_url = guild.icon_url)
             emb.add_field(name = "**Error**", value = f"**Your server's prefix already is: ``{cur_prefix}``**")
